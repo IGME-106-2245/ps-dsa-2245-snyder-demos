@@ -17,9 +17,9 @@ namespace ListsOfObjectsPE
             students = new List<Student>();
         }
 
-        public String SearchByName(string name)
+        public Student SearchByName(string name)
         {
-            return "Searched By Name";
+            return new Student("Ben", "GDD", 1000);
         }
     }
 }

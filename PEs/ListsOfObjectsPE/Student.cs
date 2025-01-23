@@ -36,7 +36,7 @@ namespace ListsOfObjectsPE
 
         public override String ToString()
         {
-            return name;
+            return String.Format($"{Name} - {Year} - {Major}");
         }
     }
 }

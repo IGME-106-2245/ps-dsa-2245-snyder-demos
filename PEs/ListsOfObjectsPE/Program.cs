@@ -16,6 +16,7 @@
             roster.AddStudent(new Student("Lacy", "Baking", 3));
             roster.AddStudent(new Student("Pax", "Barking", 2));
             roster.AddStudent(new Student("Aiden", "Eating", 1));
+            roster.Save();
         }
     }
 }

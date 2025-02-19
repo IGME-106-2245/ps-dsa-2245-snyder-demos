@@ -12,12 +12,19 @@
     {
         static void Main(string[] args)
         {
-            WeekDays today = WeekDays.Monday;
+            List<IPettable> petList = new List<IPettable>();
 
+            petList.Add(new Dog());
 
-            if (today == WeekDays.Monday)
+            petList.Add(new Cat());
+
+            foreach (IPettable pet in petList)
             {
-                Console.WriteLine("I tolerate Mondays!");
+                if (pet is Cat)
+                {
+                    pet.ReceivePets();
+
+                }
             }
         }
     }
